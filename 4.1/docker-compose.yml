@@ -1,0 +1,11 @@
+version: '3'
+services:
+    docker-mongodb:
+        image: dnichyparuk/docker-mongodb
+        container_name: mongodb
+        volumes:
+            - /etc/localtime:/etc/localtime:ro
+        restart: always
+        ports:
+            - 27017:27017
+#        environment:
